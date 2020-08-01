@@ -1,24 +1,10 @@
 import React from 'react';
-import { View ,StyleSheet, Text} from 'react-native';
-import WelcomeScreen from './app/screens/WelcomeScreen';
+import DrawerNavigation from './Navigators/DrawerNavigation';
 
 export default function App() {
   return (
-    
-    <WelcomeScreen>
-      <View style={styles.left}>
-
-      </View>
-
-    </WelcomeScreen>
+  <DrawerNavigation/>
   );
 }
 
-const styles = StyleSheet.create({
-  left:{
-    width:200,
-    height:200,
-    backgroundColor:"black",
-    position:"absolute",
-  }
-})
+

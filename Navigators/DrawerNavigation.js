@@ -9,13 +9,17 @@ import {
 } from '@react-navigation/drawer'
 import Home from '../Screens/Home'
 import Contact from "../Screens/Contact"
+import { color } from "react-native-reanimated"
 
 function CustomDrawerContent(props) {
     return (
         <ScrollView style = {styles.container}>
             <View style={styles.drawerHeader}>
                 <View>
-                    <Text style={styles.drawerHeaderText}>Drawer Menu</Text>
+                    <Text style={styles.drawerHeaderText}>はじめての日本語能力試験</Text>
+                    <Text style={styles.drawerHeaderText_tengo}>N1 単語</Text>
+                    <Text style={styles.drawerHeaderText_tengo}>３０００</Text>
+
                 </View>
             </View>
             <DrawerContentScrollView {...props}>
@@ -57,11 +61,21 @@ const styles = StyleSheet.create({
     height:150,
     alignItems:'center',
     justifyContent:'center',
-    flex:1
+    flex:1,
   },
   drawerHeaderText:{
     color:'white',
-    fontSize:24,
+    fontSize:15,
     fontWeight:'bold',
+    textAlign:'center',
+    color:'red',
+    marginTop:15
+  },
+  drawerHeaderText_tengo:{
+    color:'white',
+    fontSize:35,
+    fontWeight:'bold',
+    textAlign:'center',
+    color:'black'
   }
 })

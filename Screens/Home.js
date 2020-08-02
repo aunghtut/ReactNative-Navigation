@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 import { View, StyleSheet, ScrollView, Text } from "react-native";
 import Header from "../Header/Header";
+import FlatListDemo from "../FlatList/FlatListDemo";
 
 export default function Home({ navigation }) {
   return (
     <View style={styles.container}>
       <Header title="Home" navigation={navigation} />
       <View style={styles.context}>
-        <Text style={styles.text}>Home is Here</Text>
+        <Text style={styles.text}>日本語能力試験</Text>
+        <FlatListDemo></FlatListDemo>
       </View>
     </View>
   );

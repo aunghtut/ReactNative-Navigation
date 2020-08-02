@@ -1,3 +1,8 @@
+reference learn site
+......................
+https://www.udemy.com/course/react-native-complete-navigation/learn/lecture/21131720#overview
+
+
 compoents and dependencies
 ............................
 npm install @react-navigation/native
